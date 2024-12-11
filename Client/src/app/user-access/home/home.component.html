@@ -1,0 +1,17 @@
+
+<div class="home">
+    <h3 class="d-header">Dating App</h3>
+    <input class="d-credentials" [(ngModel)]="userAcess.userName" type="text" placeholder="UserName">
+    <input class="d-credentials" [(ngModel)]="userAcess.userPassword" type="password" placeholder="Password">
+    <button type="submit" class="login" (click)="login(userAcess)">Login</button>
+</div>
+
+<div class="d-content">
+    <h1>Find your match</h1>
+    <p>Come on in to view your matches...all is you need to sign up!</p>
+
+    <div class="d-content-buttons">
+        <button type="submit" class="register-btn" click="register()">Register</button>
+        <button type="submit" class="learn-mre-btn" click="learnMore()">Learn More</button>
+    </div>
+</div>
