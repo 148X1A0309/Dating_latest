@@ -1,1 +1,34 @@
-<p>login works!</p>
+<div class="home">
+    <h3 class="d-header">Dating App</h3>
+    <input class="d-credentials" [(ngModel)]="userAcess.userName" type="text" placeholder="UserName">
+    <input class="d-credentials" [(ngModel)]="userAcess.userPassword" type="password" placeholder="Password">
+    <button type="submit" class="login" (click)="login(userAcess)">Login</button>
+</div>
+
+
+<div class="signUp">
+    <h1>Sign Up</h1>
+    <div>
+    <span>I am a:</span><input type="radio"><label>Men</label>
+    <input type="radio"><label>Female</label>
+    </div>
+    <label for="userName">UserName</label>
+    <input type="text" placeholder="UserName"><br>
+    <label for="Known As">Known As</label>
+    <input type="text" placeholder="Known As"><br>
+    <label for="dob">Date of Birth</label>
+    <input type="date"><br>
+    <label for="city">City</label>
+    <input type="text"><br>
+    <label for="city">Country</label>
+    <input type="text"><br>
+    <label for="password">Password</label>
+    <input type="password"><br>
+    <label for="confirm-password"> Confirm password</label>
+    <input type="password"><br>
+</div>  
+
+<div class="d-content-buttons">
+    <button type="submit" class="register-btn" click="register()">Register</button>
+    <button type="submit" class="learn-mre-btn" click="cancel()">Cancel</button>
+</div>
